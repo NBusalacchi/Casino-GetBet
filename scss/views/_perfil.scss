@@ -1,0 +1,127 @@
+.perfil {
+
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #343a40;
+    border-radius: 15px;
+    border: solid 1px #5c6664;
+    height: 70vh;
+
+    .card-div {
+
+        padding: 180px;
+
+
+    }
+
+
+    .inputs {
+
+        gap: 20px;
+        padding: 200px;
+        justify-content: center;
+        flex-direction: column;
+
+        .o {
+
+            text-align: center;
+
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 576px) {
+
+    .perfil {
+
+        .inputs {
+            padding: 0;
+            padding-right: 100px;
+            padding-left: 15px;
+
+        }
+
+        .card-div {
+            padding: 5px;
+        }
+    }
+
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .perfil {
+
+        .inputs {
+            padding: 0;
+            padding-right: 100px;
+
+        }
+
+        .card-div {
+            padding: 30px;
+        }
+    }
+
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    .perfil {
+
+        .inputs {
+            padding: 0;
+            padding-right: 100px;
+
+        }
+
+        .card-div {
+            padding: 50px;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    .perfil {
+
+        .inputs {
+            padding: 0;
+            padding-right: 100px;
+
+        }
+
+
+    }
+}
+
+
+@media only screen and (min-width: 1400px) {
+    .card-div {
+        padding: 180px;
+    }
+
+    .inputs {
+
+        gap: 20px;
+        padding: 200px;
+        justify-content: center;
+        flex-direction: column;
+
+        .o {
+
+            text-align: center;
+
+        }
+
+    }
+}
+

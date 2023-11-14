@@ -50,69 +50,45 @@
     </header>
 
     <section class="sectionr container">
-        <div class="container">
-            <p>Preguntas Frecuentes</p>
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Somos una pagina segura?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>
-                                Absolutamente, en Casino GetBet, la seguridad es nuestra máxima prioridad.
-                                Contamos con cifrado de vanguardia para proteger tus datos, utilizamos generadores de
-                                números aleatorios para juegos justos y monitoreamos constantemente para mantener un
-                                entorno seguro. ¡Puedes confiar en nosotros para una experiencia de juego en línea
-                                segura y emocionante!
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Cuanto tiempo tarda en realizarse un retiro?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">En Casino Getbet, procesamos los retiros de manera
-                            eficiente. El tiempo exacto puede variar según el método de retiro seleccionado y las
-                            medidas de seguridad. Generalmente, los retiros se completan dentro de 8hs horas/días
-                            laborables. Garantizamos un proceso rápido y seguro para que disfrutes de tus ganancias sin
-                            demoras innecesarias. ¡Tu satisfacción es nuestra prioridad!
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Hay limite para jugar?
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
 
-                            No hay límite predeterminado para jugar en [Casino GetBet, ya que queremos que
-                            disfrutes al máximo. Sin embargo, implementamos medidas de juego responsable para garantizar
-                            una experiencia saludable. Ofrecemos herramientas de autoexclusión, límites de depósito y
-                            sesiones temporales para ayudarte a controlar tu juego. La diversión es clave, y estamos
-                            comprometidos con tu bienestar. ¡Juega con responsabilidad en Casino GetBet
-                        </div>
+        <div class="container">
+            <div class="contact">
+                <div class="container text1">
+                    <div class="contact-info">
+                        <h2 class="text_rec contc">Contáctanos</h2>
+                        <p class="text_rec ask">¿Tienes preguntas, comentarios o necesitas asistencia? Estoy aquí para ayudarte. No dudes en
+                            contactarme para discutir tus inquietudes o necesidades. Puedes escribirme un correo
+                            electrónico, llamarme o conectarte a través de las redes sociales. ¡Espero con interés saber
+                            de
+                            ti y trabajar juntos para encontrar la solución perfecta.</p>
+                        <p class="text_rec info">
+                            <strong>Teléfono:</strong>+543416631421<br>
+                            <strong>Email:</strong> <a
+                                href="mailto:getbetcasino@gmail.com">getbetcasino@gmail.com</a><br>
+                            <strong>Ubicación:</strong> Argentina, Rosario
+                        </p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="reclamos-">
-            <h4 class="rec-h4">Si presenta algun reclamo en particular estan nuestras redes, 24hs, si no envielo por
-                aqui</h4>
-            <input type="text" placeholder="Reclamo">
-            <div class="btn-rec">
-                <button type="button" class="btn btn-secondary-3">Enviar</button>
+                <div class="dat">
+                    <form class="form" action="procesar_reclamo.hph" method="post">
+                        <h2>Formulario de Reclamos</h2>
+                        <form class="form" action="procesar_reclamo.php" method="post">
+                            <label class="user" for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+
+                            <label class="user" for="apellido">Apellido:</label>
+                            <input type="text" id="apellido" name="apellido" required>
+
+                            <label class="user"  for="email">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label class="user"  for="problema">Descripción del Problema:</label>
+                            <textarea id="problema" name="problema" rows="4" required></textarea>
+
+                            <button class="button_rec" type="submit">Enviar Reclamo</button>
+                        </form>
+                    </form>
+                </div>
             </div>
         </div>
     </section>

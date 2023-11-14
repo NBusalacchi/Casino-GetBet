@@ -1,0 +1,99 @@
+.footer {
+    height: 12vh;
+
+    .redes-reclamos {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        font-size: $hover-font;
+        height: 10vh;
+
+        .rec-div {
+
+            .reclamos {
+
+                font-size: $m-font;
+                color: $font-color;
+                font-weight: bold;
+                transition: all 0.6s ease;
+
+                
+            &:hover {
+
+                font-size: $hover-font;
+            }
+
+            
+
+            }
+
+        }
+
+        .copy-div {
+
+            display: flex;
+            align-items: end;
+
+            .copy {
+                font-size: $sm-font;
+            }
+
+        }
+
+        .redes {
+
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+
+            .face-ig-wapp {
+
+                display: flex;
+                color: wheat;
+
+                .bi-instagram::before {
+
+                    background: $instagram-bg-color;
+                    background: $instagram-color;
+                    border-radius: 6px;
+                }
+
+                .bi-facebook::before{
+
+                    color: $facebook-color;
+                }
+    
+                .bi-whatsapp::before{
+    
+                    color: $wsp-color;
+                }
+            }
+
+        
+        }
+
+    }
+
+}
+
+//Media Query
+
+@media only screen and (min-width: 576px) {
+
+    .copy {
+        font-size:$sm-font;
+    }
+
+}
+
+
+@media only screen and (min-width: 1400px) {
+    
+    .copy {
+        font-size: 12px;
+    }
+    
+}
+
