@@ -82,7 +82,6 @@ img {
 @media only screen and (min-width: 1400px) {
   .copy {
     font-size: 12px;
-    
   }
 }
 .header {
@@ -96,7 +95,7 @@ img {
 .header .getbet {
   font-family: "Lilita One", sans-serif;
   margin-left: 30px;
-  padding: 5px;
+  margin-bottom: 0rem;
   font-size: 20px;
   color: violet;
 }
@@ -107,14 +106,23 @@ img {
   gap: 80px;
 }
 .header #navbarNav .navbar-nav .nav-item .nav-link {
+  transition: all 0.3s ease;
   color: rgb(255, 255, 255);
 }
 .header #navbarNav .navbar-nav .nav-item:hover {
   font-size: 18px;
-  transition: all 0.4s ease;
   margin-bottom: -2px;
 }
 
+@media only screen and (min-width: 350px) {
+  .getbet {
+    font-family: "Lilita One", sans-serif;
+    margin-left: 0px;
+    margin-bottom: 0rem;
+    font-size: 20px;
+    color: violet;
+  }
+}
 @media only screen and (min-width: 576px) {
   .navbar-nav {
     width: 100%;
@@ -198,6 +206,13 @@ img {
   height: 75vh;
 }
 
+@media only screen and (min-width: 1px) {
+  .banner-img {
+    height: 350px;
+    width: 350px;
+    border-radius: 6px;
+  }
+}
 @media only screen and (min-width: 576px) {
   .banner-img {
     height: 400px;
@@ -438,7 +453,7 @@ img {
   overflow: hidden;
   border-radius: 0.25em;
 }
-.play::after {
+.play .select::after {
   content: "▼";
   position: absolute;
   top: 0;
@@ -449,7 +464,7 @@ img {
   pointer-events: none;
   transition: 0.25s all ease;
 }
-.play:hover::after {
+.play .select:hover::after {
   color: violet;
 }
 .play .monto-div {

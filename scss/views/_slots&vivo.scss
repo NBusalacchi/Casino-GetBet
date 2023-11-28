@@ -46,11 +46,10 @@
         background: #5c6664;
         overflow: hidden;
         border-radius: .25em;
+
     }
 
-
-    &::after {
-
+    .select::after {
         content: '\25BC';
         position: absolute;
         top: 0;
@@ -61,11 +60,13 @@
         pointer-events: none;
         transition: .25s all ease;
     }
-
-    &:hover::after {
+    
+    .select:hover::after {
         color: violet;
     }
 
+
+  
     //monto
 
     .monto-div {

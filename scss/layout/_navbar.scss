@@ -13,7 +13,7 @@
     .getbet {
         font-family: 'Lilita One', sans-serif;
         margin-left: 30px;
-        padding: 5px;
+        margin-bottom: 0rem;
         font-size:20px;
         color: violet;
 
@@ -30,16 +30,15 @@
             .nav-item {
 
                 .nav-link {
-
+                    transition: all 0.3s ease ; 
                     color: $font-color ;
 
+                
                 }
 
                 &:hover {
                     font-size: $hover-font;
-                    transition: all 0.4s ease;
                     margin-bottom: -2px;
-
                 }
 
             }
@@ -55,6 +54,16 @@
 }
 
 // //Media Query
+
+@media only screen and (min-width: 350px) {
+    .getbet {
+      font-family: "Lilita One", sans-serif;
+      margin-left: 0px;
+      margin-bottom: 0rem;
+      font-size: 20px;
+      color: violet;
+    }
+  }
 
 @media only screen and (min-width: 576px) {
 

@@ -58,6 +58,15 @@
 }
 
 //Media Query
+@media only screen and (min-width: 350px) {
+
+    .banner-img {
+        height: 350px;
+        width: auto;
+        border-radius: 6px;
+    }
+
+}
 
 @media only screen and (min-width: 576px) {
 
@@ -75,7 +84,6 @@
 
 
 }
-
 
 
 @media only screen and (min-width: 768px) {
