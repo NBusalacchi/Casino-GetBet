@@ -12,9 +12,10 @@
 
     .getbet {
         font-family: 'Lilita One', sans-serif;
-        margin-left: 30px;
         margin-bottom: 0rem;
-        font-size:20px;
+        font-size: 20px;
+        margin-left: 15px;
+        letter-spacing: 2px;
         color: violet;
 
     }
@@ -30,10 +31,10 @@
             .nav-item {
 
                 .nav-link {
-                    transition: all 0.3s ease ; 
+                    transition: all 0.3s ease;
                     color: $font-color ;
 
-                
+
                 }
 
                 &:hover {
@@ -55,37 +56,71 @@
 
 // //Media Query
 
-@media only screen and (min-width: 350px) {
-    .getbet {
-      font-family: "Lilita One", sans-serif;
-      margin-left: 0px;
-      margin-bottom: 0rem;
-      font-size: 20px;
-      color: violet;
+@media only screen and (min-width: 351px) and (max-width: 576px) {
+    .header {
+
+
+        #navbarNav {
+
+            .navbar-nav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+
+            }
+        }
+
+        .getbet {
+
+            margin-right: 70px;
+        }
+
     }
-  }
 
-@media only screen and (min-width: 576px) {
 
-    .navbar-nav {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
+}
 
-    .getbet {
-        margin-right: 70px;
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .header {
+
+        #navbarNav {
+            .navbar-nav {
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                gap: 30px
+            }
+        }
+
+        .getbet {
+
+            margin-right: 70px;
+        }
     }
 
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
 
 
-    .navbar-nav {
-        justify-content: center;
-        align-items: center;
+    .header {
+
+        #navbarNav {
+            .navbar-nav {
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                gap: 30px
+            }
+        }
+
+        .getbet {
+
+            margin-right: 70px;
+        }
     }
 
 }
@@ -95,10 +130,10 @@
 @media only screen and (min-width: 992px) {
 
     .navbar-nav {
-        width: 70%;
+        width: 78%;
         justify-content: center;
         align-items: center;
-        gap: 80px;
+
     }
 
 }
@@ -107,10 +142,10 @@
 @media only screen and (min-width: 1200px) {
 
     .navbar-nav {
-        width: 76%;
+        width: 81%;
         justify-content: center;
         align-items: center;
-        gap: 80px;
+
     }
 
 }
@@ -119,10 +154,10 @@
 @media only screen and (min-width: 1400px) {
 
     .navbar-nav {
-        width: 83%;
+        width: 84%;
         justify-content: center;
         align-items: center;
-        gap: 80px;
+
     }
 
 }

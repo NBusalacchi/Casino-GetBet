@@ -8,6 +8,7 @@
     border-radius: 15px;
     border: solid 1px #5c6664;
     height: 70vh;
+    flex-direction: row;
 
     .card-div {
 
@@ -27,6 +28,23 @@
         .o {
 
             text-align: center;
+
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+
+    .perfil {
+        flex-direction: column;
+        height: auto;
+
+        .card-div {
+
+            padding: 30px;
+
 
         }
 
@@ -124,4 +142,3 @@
 
     }
 }
-

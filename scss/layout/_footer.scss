@@ -1,5 +1,5 @@
 .footer {
-    height: 12vh;
+    // height: 12vh;
 
     .redes-reclamos {
 
@@ -19,13 +19,13 @@
                 font-weight: bold;
                 transition: all 0.6s ease;
 
-                
-            &:hover {
 
-                font-size: $hover-font;
-            }
+                &:hover {
 
-            
+                    font-size: $hover-font;
+                }
+
+
 
             }
 
@@ -60,18 +60,18 @@
                     border-radius: 6px;
                 }
 
-                .bi-facebook::before{
+                .bi-facebook::before {
 
                     color: $facebook-color;
                 }
-    
-                .bi-whatsapp::before{
-    
+
+                .bi-whatsapp::before {
+
                     color: $wsp-color;
                 }
             }
 
-        
+
         }
 
     }
@@ -80,20 +80,56 @@
 
 //Media Query
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 350px) {
 
-    .copy {
-        font-size:$sm-font;
+    .footer {
+        height: auto;
+
+        .redes-reclamos {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            font-size: $hover-font;
+            height: 10vh;
+
+        }
+
     }
 
 }
+
+
+@media only screen and (max-width: 768px) {
+
+    .footer {
+
+        .redes-reclamos {
+            height: 10vh;
+            gap: 30px;
+
+            .copy-div {
+                
+                .copy {
+                    font-size: 6px;
+                }
+
+            }
+
+            .redes {
+                gap: 20px;
+            }
+        }
+    }
+}
+
 
 
 @media only screen and (min-width: 1400px) {
-    
+
     .copy {
         font-size: 12px;
     }
-    
-}
 
+}

@@ -26,9 +26,6 @@ img {
   padding-left: calc(var(--bs-gutter-x) * -0.5);
 }
 
-.footer {
-  height: 12vh;
-}
 .footer .redes-reclamos {
   display: flex;
   justify-content: center;
@@ -74,9 +71,29 @@ img {
   color: #128C7E;
 }
 
-@media only screen and (min-width: 576px) {
-  .copy {
-    font-size: 10px;
+@media only screen and (min-width: 350px) {
+  .footer {
+    height: auto;
+  }
+  .footer .redes-reclamos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 18px;
+    height: 10vh;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer .redes-reclamos {
+    height: 10vh;
+    gap: 30px;
+  }
+  .footer .redes-reclamos .copy-div .copy {
+    font-size: 6px;
+  }
+  .footer .redes-reclamos .redes {
+    gap: 20px;
   }
 }
 @media only screen and (min-width: 1400px) {
@@ -94,9 +111,10 @@ img {
 }
 .header .getbet {
   font-family: "Lilita One", sans-serif;
-  margin-left: 30px;
   margin-bottom: 0rem;
   font-size: 20px;
+  margin-left: 15px;
+  letter-spacing: 2px;
   color: violet;
 }
 .header #navbarNav .navbar-nav {
@@ -114,53 +132,58 @@ img {
   margin-bottom: -2px;
 }
 
-@media only screen and (min-width: 350px) {
-  .getbet {
-    font-family: "Lilita One", sans-serif;
-    margin-left: 0px;
-    margin-bottom: 0rem;
-    font-size: 20px;
-    color: violet;
-  }
-}
-@media only screen and (min-width: 576px) {
-  .navbar-nav {
-    width: 100%;
+@media only screen and (min-width: 351px) and (max-width: 576px) {
+  .header #navbarNav .navbar-nav {
+    display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
   }
-  .getbet {
+  .header .getbet {
     margin-right: 70px;
   }
 }
-@media only screen and (min-width: 768px) {
-  .navbar-nav {
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .header #navbarNav .navbar-nav {
+    width: 100%;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+  }
+  .header .getbet {
+    margin-right: 70px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .header #navbarNav .navbar-nav {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .header .getbet {
+    margin-right: 70px;
   }
 }
 @media only screen and (min-width: 992px) {
   .navbar-nav {
-    width: 70%;
+    width: 78%;
     justify-content: center;
     align-items: center;
-    gap: 80px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .navbar-nav {
-    width: 76%;
+    width: 81%;
     justify-content: center;
     align-items: center;
-    gap: 80px;
   }
 }
 @media only screen and (min-width: 1400px) {
   .navbar-nav {
-    width: 83%;
+    width: 84%;
     justify-content: center;
     align-items: center;
-    gap: 80px;
   }
 }
 .divisor-main {
@@ -197,8 +220,8 @@ img {
   transition: all 0.6s ease;
 }
 .slots .slots-img:hover {
-  width: 190px;
-  height: 190px;
+  width: 186px;
+  height: 186px;
   margin-bottom: -10px;
 }
 
@@ -206,10 +229,10 @@ img {
   height: 75vh;
 }
 
-@media only screen and (min-width: 1px) {
+@media only screen and (min-width: 350px) {
   .banner-img {
     height: 350px;
-    width: 350px;
+    width: 100%;
     border-radius: 6px;
   }
 }
@@ -267,6 +290,7 @@ img {
   border-radius: 15px;
   border: solid 1px #5c6664;
   height: 70vh;
+  flex-direction: row;
 }
 .perfil .card-div {
   padding: 180px;
@@ -281,6 +305,15 @@ img {
   text-align: center;
 }
 
+@media only screen and (max-width: 576px) {
+  .perfil {
+    flex-direction: column;
+    height: auto;
+  }
+  .perfil .card-div {
+    padding: 30px;
+  }
+}
 @media only screen and (min-width: 576px) {
   .perfil .inputs {
     padding: 0;
@@ -415,6 +448,22 @@ img {
   background-color: #5c6664;
 }
 
+@media only screen and (max-width: 768px) {
+  .sectionr {
+    height: auto;
+  }
+  .sectionr .contact {
+    flex-direction: column;
+  }
+  .sectionr .contact .text1 {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+  .sectionr .contact .dat {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+}
 .crupier-ruleta-slots .slots-play {
   border-radius: 8px;
 }
@@ -473,6 +522,12 @@ img {
 .play .monto-div .monto {
   align-items: center;
   padding-top: 7px;
+}
+
+@media only screen and (min-width: 350px) and (max-width: 492px) {
+  .play {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

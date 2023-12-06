@@ -114,40 +114,24 @@
     }
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (max-width: 768px) {
 
- 
+    .sectionr {
+        height: auto;
 
+        .contact {
+            flex-direction: column;
+
+            .text1 {
+                // padding: 120px;
+                margin-left: 120px;
+                margin-right: 120px;
+            }
+
+            .dat {
+                margin-left: 120px;
+                margin-right: 120px;
+            }
+        }
+    }
 }
-
-
-// @media only screen and (min-width: 150px) {
-
-//     .sectionr {
-
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         height: auto;
-//     }
-
-
-//     .contact {
-//         display: flex;
-//         align-items: center;
-//         flex-direction: column;
-
-//         .text1 {
-//             display: flex;
-//             text-align: right;
-//             padding: 15px ;
-//             font-size: $m-font;
-//         }
-
-//         .dat {
-//             margin: 20px;
-//             margin-right: 10px ;
-
-//         }
-//     }
-// }
